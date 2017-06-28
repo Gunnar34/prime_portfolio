@@ -1,0 +1,18 @@
+<div id="repos">
+  <h1 class="center-align Headers" >Repos</h1>
+
+  <div class="row">
+    <div class="center-align" ng-repeat="x in mc.repos" >
+      <div class="repoInfo col s3 card container hoverable" ng-click="mc.toggleCard($index)" ng-show="x.card">
+        <h4>{{ x.name }}</h4>
+        <p>{{ x.pushed_at | date }}</p>
+        <p>written in: {{ x.language }}</p>
+        <a href='{{ x.svn_url }}' target='_blank' class="linkPage">Repo Link</a>
+      </div>
+      <div class="repoInfo col s3 card container hoverable" ng-click="mc.toggleCard($index)" ng-hide="x.card">
+        <h3>{{x.owner.login}}</h3>
+        <p>{{x.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

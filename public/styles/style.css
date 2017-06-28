@@ -1,0 +1,36 @@
+#aboutMain {
+  height: 1200px;
+  background-image: url('../images/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#aboutBanner {
+  top: 800px;
+  margin: 20px;
+  width: 700px;
+}
+
+.about {
+  margin: 20px;
+}
+
+.Headers {
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: white;
+}
+
+.repoInfo {
+  position: relative;
+  height: 250px;
+  margin-top: 30px;
+  margin-right: 120px;
+}
+
+#repos {
+  background-image: url('../images/coffee.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}

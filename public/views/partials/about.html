@@ -1,0 +1,20 @@
+<div id="aboutMain">
+
+  <h1 class="center-align Headers" scroll-fire="toast('Who is Noah Rolf?', 3000)">About</h1>
+
+  <div class="center-align card z-depth-5 " id="aboutBanner">
+    <div class="row">
+      <div class="about right-align header col s7"><h1>{{mc.profile.name}}</h1></div>
+      <div class="about col s3">
+        <img src="{{ mc.profile.avatar_url }}" alt="" class="circle responsive-img">
+      </div>
+    </div>
+    <div class="about row">
+      <p>{{ mc.profile.bio }}</p>
+      <p>Email: {{ mc.profile.email }}</p>
+      <a href="{{ mc.profile.html_url }}">Github Account</a> |
+      <a href="https://www.linkedin.com/in/noah-rolf/" >LinkedIn</a>
+    </div>
+  </div>
+
+</div>
